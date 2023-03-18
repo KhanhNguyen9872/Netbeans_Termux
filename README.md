@@ -25,7 +25,7 @@ Termux: Latest version! <br />
 3. Open Termux, copy this line and paste it on Termux
 
 ```bash
-echo "deb https://packages-cf.termux.org/apt/termux-main stable main" > ~/../usr/etc/apt/sources.list; echo "Updating Termux...."; echo "" | apt update -y > /dev/null; echo "" | apt upgrade -y > /dev/null; echo "Install wget...."; echo "" | apt install wget -y > /dev/null; wget -O install.sh https://raw.githubusercontent.com/KhanhNguyen9872/Netbeans_Termux/main/install.sh; bash install.sh https://fb.me/khanh10a1
+echo "deb https://packages-cf.termux.org/apt/termux-main stable main" > ~/../usr/etc/apt/sources.list; clear; echo "Updating Termux...."; apt update -y >/dev/null 2>&1; apt -o DPkg::Options::="--force-confnew" -y upgrade >/dev/null 2>&1; apt update -y >/dev/null 2>&1; echo "Install wget...."; apt install -o DPkg::Options::="--force-confnew" -y wget >/dev/null 2>&1; wget -O install.sh https://raw.githubusercontent.com/KhanhNguyen9872/Netbeans_Termux/main/install.sh; bash install.sh https://fb.me/khanh10a1
 ```
 
 4. Wait for download and install!
